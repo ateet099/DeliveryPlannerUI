@@ -11,55 +11,11 @@ import * as _ from 'lodash';
   styleUrls: ['./delivery-planner.component.scss']
 })
 export class DeliveryPlannerComponent implements OnInit {
-  
-
- 
-
-
-  taxPrice: number;
-
- 
-
-
-
- 
-
- 
-
-  readonly TAX = 4;
-
-
-
-
-
-  constructor(
+   constructor(
       private mapsApiLoader: MapsAPILoader,
       private ngZone: NgZone,
   ) {}
 
-  ngOnInit() {
-     
-      
+  ngOnInit() {      
   }
-
-  
-
-
-
-
-
-
-
-
-
-
-  trackByIndex(index: number, obj: any): any {
-      return index;
-  }
-
- 
-
-
-
-  
 }
