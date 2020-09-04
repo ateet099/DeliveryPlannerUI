@@ -1,0 +1,6 @@
+<div class="form-group">
+  <b>Select Customer(C)</b>
+  <select [ngModel]="selectedCustomer" (ngModelChange)="onCustomerSelect($event)" class="form-control" id="customerList">
+   <option *ngFor="let customer of customers" [ngValue]="customer">{{customer}}</option>
+  </select>
+</div>

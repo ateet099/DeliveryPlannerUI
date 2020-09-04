@@ -1,0 +1,12 @@
+<div id="input-and-display-address" class="col col-xl-6 col-lg-12">
+  <app-dp-query></app-dp-query>
+</div>
+<div id="map" class="col col-xl-6 col-lg-12">
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false">
+    <div *ngIf="markers.length === 1">
+      <agm-marker [latitude]="markers[0].lat" [longitude]="markers[0].lng" [label]="markers[0].label">
+      </agm-marker>
+    </div>
+  </agm-map>
+</div>
+<app-dp-results></app-dp-results>
